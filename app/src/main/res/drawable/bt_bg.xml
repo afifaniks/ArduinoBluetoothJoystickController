@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item android:state_pressed = "false">
+        <layer-list>
+            <item>
+                <shape android:shape = "rectangle">
+                    <size android:width="35dp" android:height="35dp"/>
+                    <solid android:color ="@color/btnBG"/>
+                    <corners android:radius="35dp"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/bt_icon" android:height="25dp" android:width="25dp" android:gravity="center"/>
+        </layer-list>
+    </item>
+    <item android:state_pressed = "true">
+        <layer-list>
+            <item>
+                <shape android:shape = "rectangle">
+                    <size android:width="35dp" android:height="35dp"/>
+                    <solid android:color ="@color/colorPrimary"/>
+                    <corners android:radius="35dp"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/bt_icon" android:height="25dp" android:width="25dp" android:gravity="center"/>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btDevies"
+                android:background="@drawable/bt_bg"
+                android:layout_width="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connected to: " />
+
+            <TextView
+                android:id="@+id/deviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="None" />
+
+        </LinearLayout>
+
+        <com.erz.joysticklibrary.JoyStick
+            android:layout_weight="4"
+            android:id="@+id/joyStick"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:padColor="@color/btnBG"
+            app:buttonColor="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnOnOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/off_btn_state"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnA"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/a_btn_bg"
+                    android:layout_margin="10dp"/>
+                <ImageButton
+                    android:id="@+id/btnB"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/b_btn_bg"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp">
+
+                <ImageButton
+                    android:id="@+id/btnC"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/c_btn_bg"
+                    android:layout_margin="10dp"/>
+                <ImageButton
+                    android:id="@+id/btnD"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/d_btn_bg"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
