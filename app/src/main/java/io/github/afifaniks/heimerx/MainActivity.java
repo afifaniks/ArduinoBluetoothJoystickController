@@ -150,32 +150,6 @@ public class MainActivity extends AppCompatActivity implements JoyStick.JoyStick
     public void onMove(JoyStick joyStick, double angle, double power, int direction) {
         String msg = "" + direction;
         System.out.println(direction);
-//        switch (direction) {
-//            case 0:
-//                txtDirection.setText("Left");
-//                break;
-//            case 1:
-//                txtDirection.setText("Left-Forward");
-//                break;
-//            case 2:
-//                txtDirection.setText("Forward");
-//                break;
-//            case 3:
-//                txtDirection.setText("Right-Forward");
-//                break;
-//            case 4:
-//                txtDirection.setText("Right");
-//                break;
-//            case 5:
-//                txtDirection.setText("Right-Backward");
-//                break;
-//            case 6:
-//                txtDirection.setText("Backward");
-//                break;
-//            case 7:
-//                txtDirection.setText("Left-Backward");
-//                break;
-//        }
         send(msg);
     }
 
